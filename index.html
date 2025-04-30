@@ -115,7 +115,15 @@
   </style>
 </head>
 <body>
-  <embed src="header.html" type="text/html" style="width: 100%; height: auto; border: none;">
+<div id="header"></div>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('header').innerHTML = html;
+    });
+</script>
 
   
 
@@ -144,7 +152,15 @@
   </section>
 
 
-  <embed src="footer.html" type="text/html" style="width: 100%; height: auto; border: none;">
+  <div id="header"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('header').innerHTML = html;
+    });
+</script>
 
   <script src="scripts.js"></script>
 </body>
