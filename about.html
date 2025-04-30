@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - MCJungle Minecraft Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #2ecc71;
+      --dark-green: #27ae60;
+      --white: #ffffff;
+      --gray: #f4f4f4;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--gray);
+      color: #333;
+    }
+
+    .about {
+      padding: 3rem 1rem;
+      text-align: center;
+      background-color: var(--white);
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--green);
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: var(--green);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Placeholder for header -->
+  <div id="header"></div>
+
+  <section class="about">
+    <h2>About MCJungle</h2>
+    <p>MCJungle is an exciting 1.8+ PvP server that brings the best of Minecraft combat to life. 
+      Our server features a unique Hypixel Pit Remake game mode, where players can engage in 
+      intense battles, gather loot, and become the ultimate PvP champion. Whether you're a casual 
+      player or a hardcore PvP enthusiast, MCJungle offers an experience like no other.</p>
+    
+    <p>With our custom maps, dedicated staff, and regular events, you’ll always find something new to explore. 
+      Join us today and see why MCJungle is the best Minecraft PvP server around!</p>
+  </section>
+
+  <!-- Placeholder for footer -->
+  <div id="footer"></div>
+
+  <script>
+    // Load header content from header.html
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+
+    // Load footer content from footer.html
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+  </script>
+</body>
+</html>
