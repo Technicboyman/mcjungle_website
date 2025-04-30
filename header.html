@@ -1,92 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MCJungle</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --green: #2ecc71;
-      --dark-green: #27ae60;
-      --white: #ffffff;
-      --gray: #f4f4f4;
-      --light-gray: #f1f1f1;
-    }
+<style>
+  :root {
+    --green: #2ecc71;
+    --dark-green: #27ae60;
+    --white: #ffffff;
+    --gray: #f4f4f4;
+    --light-gray: #f1f1f1;
+  }
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--gray);
-      color: #333;
-    }
+  header {
+    background-color: var(--green);
+    padding: 2rem;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+  }
 
-    header {
-      background-color: var(--green);
-      padding: 2rem;
-      text-align: center;
-      color: var(--white);
-    }
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
 
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-    }
+  header p {
+    font-size: 1.2rem;
+  }
 
-    header p {
-      font-size: 1.2rem;
-    }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--dark-green);
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+  }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background-color: var(--dark-green);
-      padding: 1rem;
-    }
+  nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-    nav a {
-      color: var(--white);
-      text-decoration: none;
-      font-weight: bold;
-    }
+  nav a:hover {
+    text-decoration: underline;
+  }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+  .logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 
-    .logo-title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-    }
+  .logo-title .logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 20%;
+  }
+</style>
 
-    .logo-title .logo {
-      width: 64px;
-      height: 64px;
-      border-radius: 20%;
-    }
-  </style>
-</head>
-<body>
+<header>
+  <div class="logo-title">
+    <img src="https://cdn.discordapp.com/attachments/660889605381423114/1367173265738563705/server-icon.png?ex=68139ed3&is=68124d53&hm=370e59b8667d42c96940a5adf53ae08adbe6ff79059c9adb0504af5fe4ed1cf8&" alt="MCJungle Logo" class="logo">
+    <h1>MCJungle</h1>
+  </div>
+  <p>1.8 PVP Server</p>
+</header>
 
-  <header>
-    <div class="logo-title">
-      <img src="https://cdn.discordapp.com/attachments/660889605381423114/1367173265738563705/server-icon.png?ex=68139ed3&is=68124d53&hm=370e59b8667d42c96940a5adf53ae08adbe6ff79059c9adb0504af5fe4ed1cf8&" alt="MCJungle Logo" class="logo">
-      <h1>MCJungle</h1>
-    </div>
-    <p>1.8 PVP Server</p>
-  </header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="vote.html">Vote</a>
-    <a href="changelog.html">Changelog</a>
-    <a href="https://mcjungle.craftingstore.net/">Store</a>
-    <a href="https://discord.gg/dsy3edgffE">Discord</a>
-  </nav>
-
-</body>
-</html>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="vote.html">Vote</a>
+  <a href="changelog.html">Changelog</a>
+  <a href="https://mcjungle.craftingstore.net/">Store</a>
+  <a href="https://discord.gg/dsy3edgffE">Discord</a>
+</nav>
