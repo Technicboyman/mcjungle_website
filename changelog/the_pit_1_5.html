@@ -6,70 +6,283 @@
   <title>Changelog</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    body {
+      margin: 0;
+      display: flex;
+      font-family: 'Inter', sans-serif;
+    }
+
     :root {
       --green: #2ecc71;
       --dark-green: #27ae60;
       --white: #ffffff;
       --gray: #f4f4f4;
       --black: #000000;
+      --hypixel: #222222;
     }
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
+    .sidebar {
+      width: 200px;
+      background-color: var(--hypixel);
+      color: white;
+      height: 300vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .content-wrapper {
+      flex: 1;
       background-color: var(--gray);
-      color: #333;
+      padding: 20px;
     }
 
-    .about {
-      padding: 3rem 1rem;
-      background-color: var(--gray);
-    }
-
-    .about h2 {
+    .changelogTitle {
       font-size: 2.5rem;
       margin-bottom: 1rem;
-      color: var(--green);
     }
 
-    .about p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto;
-      color: var(--black);
+    .changelogSubTitle {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .main {
+      font-size: 1rem;
+    }
+
+    .nutshell-list p {
+      margin: 4px 0;
+      line-height: 1.4;
+    }
+
+    .expandable {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      padding: 12px 16px;
+      transition: all 0.3s ease;
+    }
+
+    .expandable summary {
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      font-size: 1.05rem;
+    }
+
+    .expandable[open] {
+      border-color: var(--green);
+      background-color: #e9f9f0;
+    }
+
+    .expandable p {
+      margin: 10px 0 0;
+      padding-left: 5px;
+    }
+
+    .right-sidebar {
+      background-color: var(--hypixel);
     }
   </style>
 </head>
 <body>
+  <div class="sidebar">
+    <!-- Left Sidebar Content -->
+  </div>
 
-  <!-- Placeholder for header -->
-  <div id="header"></div>
+  <div class="content-wrapper">
+    <div class="changelogTitle">
+      The Pit 1.5 - Fantasy
+    </div>
 
-  <section class="about">
-    <h2>MCJungle 1.5 - New map, more lobbies, more fun!</h2>
-    <p>Coming soon</p>
-  
+    <div class="main">
+      <p>
+        Ever since The Pit reset, there has been some light content updates but they have not really changed the game that much. The new Pit 1.5 update completely changes that with its mass amount of content and exciting changes.
+      </p>
+    </div>
 
-    
-  </section>
+    <div class="changelogSubTitle">In a nutshell:</div>
 
-  <!-- Placeholder for footer -->
-  <div id="footer"></div>
+    <div class="main nutshell-list">
+      <p><strong>- New map and quest</strong></p>
+      <p><strong>- More lobbies</strong></p>
+      <p><strong>- Reworked map system</strong></p>
+      <p><strong>- Elimination Events</strong></p>
+      <p>- QOL additions</p>
+      <p>- Other additions</p>
+      <p>- Balance changes</p>
+      <p>- Other changes</p>
+      <p>- Bug fixes</p>
+    </div>
 
-  <script>
-    // Load header content from header.html
-    fetch('https://www.mcjungle.xyz/header.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('header').innerHTML = html;
-      });
+    <br><br>
 
-    // Load footer content from footer.html
-    fetch('https://www.mcjungle.xyz/footer.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('footer').innerHTML = html;
-      });
-  </script>
+    <div class="changelogSubTitle">Full Breakdown:</div>
+
+    <!-- Expandable sections for each bullet -->
+    <div class="main">
+      <details class="expandable">
+        <summary>New map and quest</summary>
+        <p>Say hello to Map #3 - Fantasy! In this map, explore 4 beautiful areas - Cloud, Spooky, Mushroom, and Magic<br></br></p>
+        
+        <img src="https://raw.githubusercontent.com/Technicboyman/mcjungle_website/refs/heads/main/images/cloud.png" alt="cloud_area" width="500">
+	<img src="https://raw.githubusercontent.com/Technicboyman/mcjungle_website/refs/heads/main/images/shroom.png" alt="shroom_area" width="500">
+	<img src="https://raw.githubusercontent.com/Technicboyman/mcjungle_website/refs/heads/main/images/spooky.png" alt="spooky_area" width="500">
+	<img src="https://raw.githubusercontent.com/Technicboyman/mcjungle_website/refs/heads/main/images/arcane.png" alt="arcane_area" width="500">
+
+	<p><br></br>Fantasy map quest:</p>
+	<p>The Fantasy Map also gets a new quest, and it is unique because it does not involve PVP, but instead mining. Mining??<br></br></p>
+
+        <img src="https://raw.githubusercontent.com/Technicboyman/mcjungle_website/refs/heads/main/images/mining.png" alt="mines" width="500">
+
+        <p><br></br>Carve your way through the underground with different types of pickaxes to uncover ores, caves, dungeons, and lava pools to work your way through the quest tiers and earn some sick rewards!<br></br></p>
+	<img src="https://raw.githubusercontent.com/Technicboyman/mcjungle_website/refs/heads/main/images/dc_boots_2.png" alt="dc_boots" width="500">
+
+	<p><br></br>Finally, explore new mechanics within the map such as launch pads in the outskirt areas to help you get away in a pinch!<br></br></p>
+
+
+        
+      </details>
+
+      <details class="expandable">
+        <summary>More lobbies</summary>
+        <p>There have been issues in the past with the singular lobby being too crammed and having it be difficult for new players to streak and participate in some events. Worry no more as there is now THREE seperate lobbies! Swap between them using /play pit <br></br>Additionally, minor events will still happen in these lobbies but for major events, even will be warped into a singular lobby for maximum fun!</p>
+      </details>
+
+      <details class="expandable">
+        <summary>Reworked map system</summary>
+        <p>There is no more map rotation. Now instead, as mentioned above, there are 3 lobbies, 1 lobby of each map. Now you simply pick the map you want to play! <br></br>This also results in the quest system being changed. You can now do all 3 map quests at the same time and reap all of the rewards. However, quest progress will be reset every 2 weeks for all players, so get all 3 of them done in 2 weeks for optimal rewards.</p>
+      </details>
+
+      <details class="expandable">
+        <summary>Elimination Events</summary>
+        <p>A new type of event has been added: Elimination Events! Here's how they work:<br></br></p>
+        <p>When they start, players have one minute to decide if they want to join. Players who choose to join will be warped into the elimination lobby which can be of any map. Don't worry, your streak, bounty, and megastreak is preserved and will be restored when you leave the event. When the event starts, it's game on. The last person surviving reaps all of the rewards and those who die can spectate the event. There are currently 2 elimination events:<br></br></p>
+        <p>Hot Potato: Similar to TNT Tag on hypixel - Attack players to pass the hot potato and whoever has it when the timer expires gets eliminated!</p>
+	<p>Disasters: Be the last one standing in a world with terrorizing disasters like rising lava, dragons, creeper infestation, shrinking world border, and lightning!<br></br></p>
+        <img src="https://raw.githubusercontent.com/Technicboyman/mcjungle_website/refs/heads/main/images/disasters.png" alt="dc_boots" width="500">
+
+      </details>
+
+      <!-- You can continue this template for the rest -->
+      <details class="expandable">
+        <summary>QOL additions</summary>
+        <ul>
+  <li>Buying Contractor now immediately gives you more contract slots instead of taking into effect the next day</li>
+  <li>Buying Fancy Hat now immediately gives you a fancy hat instead of having to die to get it</li>
+  <li>Failing a Telebow shot no longer puts it on cooldown</li>
+  <li>Many KOTH positions were improved (lowered) as they no longer have the restriction of not being able to replace non-air blocks</li>
+  <li>Logging in after a minor event starts now displays the bossbar for it</li>
+  <li>Added particles for 2x rewards in pit area</li>
+  <li>Major Events now display a bossbar</li>
+  <li>All new feathers are stackable now</li>
+  <li>Voting while offline will now save the rewards for when you log in, provided the server does not restart</li>
+  <li>Hermit Bedrock no longer enters the stash when your inventory is full</li>
+  <li>Mystic Well animation toggle no longer requires VIP</li>
+  <li>Purchased Renown Upgrades in the renown shop now get an enchantment glint</li>
+  <li>Currently selected perks, megastreaks, and killstreaks also get an enchantment glint to indicate selection</li>
+  <li>You can now get +1% drop chance uberdrops with Uber Deluxe to properly max out the drop chance</li>
+  <li>You can now preview the primary map quest rewards (Snow chest, sand boots, mythical boots, jungle heart)</li>
+  <li>The map 2 questline now shows the current amount of stacks for the extra drop chance/xp from the quest</li>
+  <li>Jungle Heart can now be stored in the ender chest</li>
+  <li>When you end your last uber of the day you will get the message + deselection of uber megastreak</li>
+  <li>Major Event time until start is now displayed in the scoreboard</li>
+  <li>Buying a megastreak or killstreak now instantly selects it</li>
+</ul>
+      </details>
+
+      <details class="expandable">
+        <summary>Other additions</summary>
+        <ul>
+  <li><strong>New Major Event: Bombers - Break as many blocks as possible using advanced methods like TNT and fireballs</strong></li>
+  <li><strong>Added prestiges 36-40</strong></li>
+  <li>Added a new enchantment: Paparazzi (auction enchantment</li>
+  <li>(Renown) Added Raw Numbers</li>
+  <li>(Renown) Added One-Upper</li>
+  <li>(Renown) Added Yummy to improve golden heads</li>
+  <li>(Renown) Added Switch Deluxe to upgrade Fresh Switch</li>
+  <li>(Renown) Added Kickstart - Gain extra damage temporarily when activating a megastreak</li>
+  <li>Added a "+1 Uberstreak" item in the token shop for 100 tokens, which essentially subtracts 1 from your "daily ubers used up"</li>
+  <li>Added total assists, total major event wins, and total elimination event wins to stats GUI and in /leaderboard</li>
+</ul>
+      </details>
+
+      <details class="expandable">
+        <summary>Balance changes</summary>
+        <ul>
+  <li>RGM fixed and changed to work the same way as real pit (pre tryhard update)</li>
+  <li>Divine miracle and the inventory saving buff from Mega Quests can now prevent a feather from being lost</li>
+  <li>Buffed Snow Chestplate to 70 lives (instead of 40)</li>
+  <li>Buffed Sand Boots to 50 lives (instead of 30)</li>
+  <li>Tribal Quest XP buffed by +20%</li>
+  <li>Buffed Tribal Quest gold to 250,000g</li>
+  <li>Jungle heart now takes about half the kills to tier up</li>
+  <li>Uber extra damage debuff only applies to bots (you will not take extra damage from real players)</li>
+  <li>Lion Megastreak now gives +1.5% xp cap per 100 kills instead of 2%, but has no limit</li>
+  <li>Lion damage nerfed to cap at 40% instead of 50%</li>
+  <li>Highlander gold buffed to +80% (from +70%)</li>
+  <li>Beast gold nerfed to +50% (from +60%)</li>
+  <li>Overdrive gold nerfed to +80% (from +100%)</li>
+  <li>Olympus now gives resistance 2 instead of resistance 1</li>
+  <li>All-in-one bundle can no longer give glass pickaxes (no more inventory filling, yay!)</li>
+  <li>Fresh Stack, XP Stack, and Gold Stack now have double the maximum bonus</li>
+  <li>Buffed Apostle by buffing the drops and adding new ones</li>
+  <li>Buffed Wolf Pack by making the wolves update their target every 0.5s instead of every 1s (@ilizzyiscute)</li>
+  <li>Buffed devil chicks radius by 10%</li>
+</ul>
+      </details>
+
+      <details class="expandable">
+        <summary>Other changes</summary>
+        <ul>
+  <li>Improved Bots now have more diversified levels, names, and prestiges</li>
+  <li>Koth now has a blue beam instead of the default white beam</li>
+  <li>Cooldown of OG special items have been reduced to 15 seconds instead of 20</li>
+  <li>Recoded and heavily optimized pit bots</li>
+</ul>
+      </details>
+
+      <details class="expandable">
+        <summary>Bug fixes</summary>
+        <ul>
+  <li><strong>Fixed "As strong as" not working on bots - Bot damage increased slightly to account for this</strong></li>
+  <li>Fixed Bulk Enchant not counting towards weekly enchants quest</li>
+  <li>Fixed Sharp 2/Prot 2 gear turning into sharp 1/prot 1 when relogging</li>
+  <li>Fixed minor typos in some places</li>
+  <li>Fixed many Safety First not working if you have Fancy Hat</li>
+  <li>Fixed being able to break map wool blocks in Jungle map</li>
+  <li>Fixed level not showing up in chat when you kill a real player</li>
+  <li>Fixed Safety First helmet and Bounty Hunter pants having durability</li>
+  <li>Fixed bots falling into the void resulting in them vanishing forever</li>
+  <li>Fixed Mystic Well cost reduction from Mega Quests not working</li>
+  <li>Fixed Leech healing 0.25 + 20% instead of 0.5 + 20%</li>
+  <li>Fixed Item Rain ending 9 seconds early, dropping items for only 21 seconds</li>
+  <li>Fixed Knockback enchant not working on bots</li>
+  <li>Fixed Mystic Pants drop message not showing the right name or color</li>
+  <li>Fixed tracking glitch for total mystics enchanted stat/quest in Bulk Enchant menu</li>
+  <li>Fixed having to outbid the starting bid on an auction</li>
+  <li>Fixed no lore for +20% bid button in auction</li>
+  <li>Fixed "+1 Promotion Use" item in Loot Chests</li>
+  <li>Fixed Promotion in Renown shop still saying it has uses</li>
+  <li>Fixed Megastreak GUI ignoring The Way in descriptions</li>
+  <li>Fixed broken tradelimit in /trade</li>
+  <li>Fixed prestiging past the maximum prestige</li>
+  <li>Fixed Pristine being +60% instead of +70%</li>
+  <li>Fixed trade request expired message being broken</li>
+  <li>Fixed Renown GUI not updating current renown correctly</li>
+  <li>Fixed Tribal Quest description saying major event renown instead of event renown</li>
+  <li>Fixed Total Renown tracking with major events</li>
+  <li>Fixed no glint on some special items like Bright Ember</li>
+  <li>Fixed auction renown not counting towards Tribal Quest</li>
+  <li>Fixed Savanna Belt</li>
+</ul>
+      </details>
+    </div>
+  </div>
+
+  <div class="sidebar right-sidebar">
+    <!-- Right Sidebar Content -->
+  </div>
 </body>
 </html>
