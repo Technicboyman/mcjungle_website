@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Pit 1.5.1 - Anti Reset</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      font-family: 'Inter', sans-serif;
+    }
+
+    :root {
+      --green: #2ecc71;
+      --dark-green: #27ae60;
+      --white: #ffffff;
+      --gray: #f4f4f4;
+      --black: #000000;
+      --hypixel: #222222;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: var(--hypixel);
+      color: white;
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .content-wrapper {
+      flex: 1;
+      background-color: var(--gray);
+      padding: 20px;
+    }
+
+    .changelogTitle {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .changelogSubTitle {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .main {
+      font-size: 1rem;
+    }
+
+    .expandable {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      padding: 12px 16px;
+      transition: all 0.3s ease;
+    }
+
+    .expandable summary {
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      font-size: 1.05rem;
+    }
+
+    .expandable[open] {
+      border-color: var(--green);
+      background-color: #e9f9f0;
+    }
+
+    .expandable p, .expandable ul {
+      margin: 10px 0 0;
+      padding-left: 5px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <!-- Sidebar Content -->
+  </div>
+
+  <div class="content-wrapper">
+    <div class="changelogTitle">The Pit 1.5.1 - Anti Reset</div>
+
+    <div class="main">
+  <p>The Pit 1.5.1 - Anti Reset update:</p>
+  <br>
+  <p><strong>Anti Reset:</strong><br>
+  Yup! That's right - MCJungle is being "anti-reset", meaning that everyone is getting their old items and stats back! (for the most part). However, there are a few caveats:</p>
+  <ul>
+    <li>Anyone marked as a duper alt will not be eligible for the anti reset</li>
+    <li>Anyone marked as a duper will have their mystics undergo a "downgrader" which weakens their most OP mystics and makes it more fair to others</li>
+    <li>All old pure is being wiped</li>
+    <li>A portion of your old XP is added on top of the new XP</li>
+    <li>Some extra stats like ubers completed are added</li>
+    <li>Normal bot boosters are replaced with mini bot boosters, since when the server reset players who bought normal size boosters were compensated</li>
+  </ul>
+  <p>Have fun and play like the old days!</p>
+</div>
+
+      <details class="expandable">
+        <summary>Bug Fixes</summary>
+        <p>
+- Fixed major event pre start duration
+- OG special items now have a 10s cooldown instead of a 15s cooldown
+- Lower prestiges spawn in a random lobby now, whereas high prestiges always spawn in the main lobby upon joining
+- Wolf pack retargeting rate increased
+- Fixed being able to attack your own wolves and pit blob
+- Fixed canopy messages not showing up at one of the chest locations
+- Fixed various issues with bot boosters
+- Fixed some mystic inconsistencies 
+- Fixed lucky diamond chance being 1% instead of 5%, and items not being auto equipped
+- Fixed gold nano factory counting towards quests
+- Fixed cases of invisible players
+- Fixed /play pit
+- Fixed elimination events
+- Fixed items in the bottom row of the enderchest viewer where "next page" and "previous page" are
+- Fixed initial usage of "next page" in the enderchest viewer going from page 1 to page 3
+- Fixed some typos
+- Fixed sierra being broken
+- Fixed "Killstreak slot #4"
+        </p>
+      </details>
+
+      <details class="expandable">
+        <summary>Mystic Balancing</summary>
+        <p>
+- Lifesteal now healing against bots is now only 25%
+- Gold Boost nerfed to 12%/24%/36% gold
+- Shadow I now gives speed 1 and Shadow III now gives speed 2 (instead of speed 1)
+- Rush no longer has the requirement for you to be on a megastreak
+- Singularity buffed from 50% reduction to 60%
+- Fixed explosion 2/3 explosion radius
+- McSwimmer now works in lava, and buffed tiers 1 and 2
+        </p>
+      </details>
+
+      <details class="expandable">
+        <summary>New Enchantments</summary>
+        <p>
+- Added a new T1 sword enchant - Momentum
+- Added a new T1 pants enchant - Mystic Allergy
+- Added a new rare pants enchant - Midas Touch
+- Added a new rare bow enchant - Ring of Fire
+        </p>
+      </details>
+
+      <details class="expandable">
+        <summary>Misc changes</summary>
+        <p>
+- True damage now displays a separate health indicator
+- Lucky diamond can now drop a Diamond Helmet
+- Buffed Uber Deluxe
+- Tripled the duration of Crit Pot to 90 seconds
+- Lion damage penalty is now 2.5% instead of 2%
+- MVP+ can now see up to leaderboard position #360
+- Ranked players now get increased stash limits
+- /leaderboard now shows your own position on each leaderboard if you are at least #360 and have VIP
+- Added tracking of 3 new stats: Bow hits and Arrows shot, and Map quests completed
+- Added a leaderboard for Map quests completed
+- Low prestige players now get an extra small base XP bonus (3 - prestige) if their prestige < 3
+- Added a new type of bot: Diamond bot - spawns with diamond armor and a diamond sword, you get extra rewards if you kill it (good for newer players)
+- Killing a player or bot with diamond armor now gives an extra XP/gold bonus (+25 XP and +5g per piece of diamond)
+        </p>
+      </details>
+    </div>
+  </div>
+
+  <div class="sidebar right-sidebar">
+    <!-- Right Sidebar -->
+  </div>
+</body>
+</html>
