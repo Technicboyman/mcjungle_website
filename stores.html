@@ -65,6 +65,12 @@
   <div id="footer"></div>
 
   <script>
+    if (!document.querySelector('link[rel="icon"]')) {
+    let link = document.createElement('link');
+    link.rel = 'icon';
+    link.type = 'image/x-icon';
+    link.href = 'https://www.mcjungle.xyz/images/output.ico';
+    document.head.appendChild(link);
     // Load header content from header.html
     fetch('header.html')
       .then(response => response.text())
@@ -82,4 +88,5 @@
 </body>
 
 </html>
+
 
