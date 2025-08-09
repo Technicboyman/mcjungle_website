@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - MCJungle Minecraft Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #2ecc71;
+      --dark-green: #27ae60;
+      --white: #ffffff;
+      --gray: #f4f4f4;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--gray);
+      color: #000; /* black text */
+    }
+
+    .about {
+      padding: 2rem 1rem;
+      background-color: var(--white);
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left; /* left-aligned text */
+    }
+
+    .about h2 {
+      font-size: 1.8rem; /* smaller heading */
+      margin-bottom: 0.8rem;
+      color: #000; /* black heading */
+    }
+
+    .about p {
+      font-size: 1rem; /* smaller paragraph text */
+      margin-bottom: 1rem;
+      color: #000; /* black paragraphs */
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Placeholder for header -->
+  <div id="header"></div>
+
+  <section class="about">
+    <h2>MCJungle Store</h2> 
+    <p>In the MCJungle store you can gems for the ingame store which can be used to buy ranks or boosters. You also support the development of the server. There are multiple store links which you can use for various purposes<br></p>
+
+    <p><strong>Paypal</strong>: <a href="https://mcjungle.craftingstore.net/">MCJungle CraftingStore</a></p>
+    <p><strong>Credit/debit card</strong>: <a href="https://mcjungle.craftingstore.net/">MCJungle Tebex Store</a></p>
+    <p><strong>Crypto</strong>: Join our Discord Server</p>
+
+
+    <p><br><br><br><br><br><br><br><br><br><br><br><br></p>
+
+  
+  </section>
+
+  <!-- Placeholder for footer -->
+  <div id="footer"></div>
+
+  <script>
+    // Load header content from header.html
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+
+    // Load footer content from footer.html
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+  </script>
+</body>
+</html>
