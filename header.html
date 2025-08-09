@@ -57,6 +57,19 @@
   }
 </style>
 
+<!-- Favicon injector -->
+<script>
+(function() {
+  if (!document.querySelector('link[rel="icon"]')) {
+    let link = document.createElement('link');
+    link.rel = 'icon';
+    link.type = 'image/png';
+    link.href = 'https://raw.githubusercontent.com/Technicboyman/mcjungle_website/refs/heads/main/images/server-icon.png';
+    document.head.appendChild(link);
+  }
+})();
+</script>
+
 <header>
   <div class="logo-title">
     <img src="https://raw.githubusercontent.com/Technicboyman/mcjungle_website/refs/heads/main/images/server-icon.png" alt="MCJungle Logo" class="logo">
@@ -74,4 +87,3 @@
   <a href="https://www.mcjungle.xyz/stores.html">Store</a>
   <a href="https://discord.gg/dsy3edgffE">Discord</a>
 </nav>
-
